@@ -1,8 +1,8 @@
-const initialState  {
+const initialState = {
     count: 0
 }
 
-export const reducer = (state, action) => {
+export const reducer = (state = initialState, action) => {
     switch (action.type) {
         case 'INCREMENT':
             return {
@@ -21,5 +21,8 @@ export const reducer = (state, action) => {
                 ...state,
                 count: 0
             }
+
+        default:
+            return state
     }
 }
