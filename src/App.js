@@ -1,10 +1,11 @@
 
 import './App.css';
+import ShowPage from './Pages/ShowPage';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!!!</h1>
+      <ShowPage />
     </div>
   );
 }
